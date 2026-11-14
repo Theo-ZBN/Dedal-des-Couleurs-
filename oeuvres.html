@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les œuvres – Dedal des Couleurs</title>
+  <meta name="description" content="Parcourez les œuvres expressionnistes de la galerie Dedal des Couleurs à Paris : filtres par artiste et par technique.">
+  <link rel="canonical" href="https://theo-zbn.github.io/Dedal-des-Couleurs/oeuvres.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Dedal des Couleurs">
+  <meta property="og:title" content="Les œuvres – Dedal des Couleurs">
+  <meta property="og:description" content="Parcourez les œuvres expressionnistes de la galerie Dedal des Couleurs à Paris : filtres par artiste et par technique.">
+  <meta property="og:url" content="https://theo-zbn.github.io/Dedal-des-Couleurs/oeuvres.html">
+  <meta property="og:image" content="https://theo-zbn.github.io/Dedal-des-Couleurs/images/logo-dedal.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#faf5ec">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Fraunces:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo-dedal.svg" alt="" width="40" height="40">
+        <span>Dedal des Couleurs</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="oeuvres.html" aria-current="page">Œuvres</a></li>
+          <li><a class="nav__link" href="a-propos.html">À propos</a></li>
+          <li><a class="nav__link" href="inscription.html">Inscription</a></li>
+          <li><a class="nav__link nav__link--cta" href="inscription.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="container">
+      <div class="page-title">
+        <h1>Les œuvres</h1>
+        <p>Une sélection d'œuvres exposées et à vendre. Filtrez par artiste ou par technique.</p>
+      </div>
+
+      <div class="catalog">
+        <aside class="filters" aria-label="Filtres">
+          <div class="filters__group">
+            <h2 class="filters__title">Artistes</h2>
+            <ul class="chips">
+            <li><button class="chip" type="button" data-group="artist" data-value="all" aria-pressed="true">Tous</button></li>
+            <li><button class="chip" type="button" data-group="artist" data-value="Soutine" aria-pressed="false">Soutine</button></li>
+            <li><button class="chip" type="button" data-group="artist" data-value="Modigliani" aria-pressed="false">Modigliani</button></li>
+            <li><button class="chip" type="button" data-group="artist" data-value="Kikoine" aria-pressed="false">Kikoine</button></li>
+            <li><button class="chip" type="button" data-group="artist" data-value="Pascin" aria-pressed="false">Pascin</button></li>
+            <li><button class="chip" type="button" data-group="artist" data-value="Chagall" aria-pressed="false">Chagall</button></li>
+            <li><button class="chip" type="button" data-group="artist" data-value="Picasso" aria-pressed="false">Picasso</button></li>
+            </ul>
+          </div>
+          <div class="filters__group">
+            <h2 class="filters__title">Technique</h2>
+            <ul class="chips">
+            <li><button class="chip" type="button" data-group="technique" data-value="all" aria-pressed="true">Tous</button></li>
+            <li><button class="chip" type="button" data-group="technique" data-value="Huile" aria-pressed="false">Huile</button></li>
+            <li><button class="chip" type="button" data-group="technique" data-value="Gouache" aria-pressed="false">Gouache</button></li>
+            <li><button class="chip" type="button" data-group="technique" data-value="Dessin" aria-pressed="false">Dessin</button></li>
+            </ul>
+          </div>
+        </aside>
+
+        <div>
+          <section class="feature" aria-labelledby="titre-mois">
+            <img src="images/oeuvre-6.svg" alt="Composition sombre aux touches jaunes, œuvre du mois" width="600" height="750">
+            <div>
+              <span class="tag">Œuvre du mois</span>
+              <h2 id="titre-mois">Terre et olive</h2>
+              <p>Une toile expressive où l'ocre et le vert olive se répondent. Contactez la galerie pour en savoir plus.</p>
+              <a class="btn btn--primary" href="inscription.html#contact">Demander des informations</a>
+            </div>
+          </section>
+
+          <div class="sort">
+            <label for="sort">Trier :</label>
+            <select id="sort">
+              <option value="recentes">Récentes</option>
+              <option value="titre">Titre (A à Z)</option>
+            </select>
+          </div>
+
+          <div class="gallery" id="gallery">
+          <figure class="gallery__item" data-artist="Soutine" data-technique="Huile" data-title="Composition n°1" data-order="1">
+            <img src="images/oeuvre-1.svg" alt="Composition abstraite aux aplats bleus, jaunes et rouges" width="600" height="750" loading="lazy">
+            <figcaption>Composition n°1<span>Soutine · Huile</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Chagall" data-technique="Gouache" data-title="Rivage" data-order="2">
+            <img src="images/oeuvre-2.svg" alt="Toile aux tons turquoise et orange" width="600" height="750" loading="lazy">
+            <figcaption>Rivage<span>Chagall · Gouache</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Modigliani" data-technique="Huile" data-title="Visage rouge" data-order="3">
+            <img src="images/oeuvre-3.svg" alt="Toile violette et orange aux formes arrondies" width="600" height="750" loading="lazy">
+            <figcaption>Visage rouge<span>Modigliani · Huile</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Kikoine" data-technique="Huile" data-title="Nuit bleue" data-order="4">
+            <img src="images/oeuvre-4.svg" alt="Toile rouge et bleu nuit" width="600" height="750" loading="lazy">
+            <figcaption>Nuit bleue<span>Kikoine · Huile</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Pascin" data-technique="Dessin" data-title="Figure verte" data-order="5">
+            <img src="images/oeuvre-5.svg" alt="Toile verte et orange" width="600" height="750" loading="lazy">
+            <figcaption>Figure verte<span>Pascin · Dessin</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Soutine" data-technique="Huile" data-title="Terre et olive" data-order="6">
+            <img src="images/oeuvre-6.svg" alt="Composition sombre aux touches jaunes" width="600" height="750" loading="lazy">
+            <figcaption>Terre et olive<span>Soutine · Huile</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Chagall" data-technique="Gouache" data-title="Turquoise" data-order="7">
+            <img src="images/oeuvre-7.svg" alt="Toile rose et turquoise" width="600" height="750" loading="lazy">
+            <figcaption>Turquoise<span>Chagall · Gouache</span></figcaption>
+          </figure>
+          <figure class="gallery__item" data-artist="Picasso" data-technique="Dessin" data-title="Portrait violet" data-order="8">
+            <img src="images/oeuvre-8.svg" alt="Toile en terre et vert olive" width="600" height="750" loading="lazy">
+            <figcaption>Portrait violet<span>Picasso · Dessin</span></figcaption>
+          </figure>
+          </div>
+          <p class="gallery__empty" id="gallery-empty" hidden>Aucune œuvre ne correspond à cette sélection.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo-dedal-clair.svg" alt="" width="40" height="40">
+        <span>Dedal des Couleurs</span>
+      </a>
+      <nav aria-label="Navigation de pied de page">
+        <ul class="site-footer__links">
+          <li><a href="oeuvres.html">Œuvres</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="inscription.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© 2026 Dedal des Couleurs – 10 rue de la République, 75000 Paris</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
