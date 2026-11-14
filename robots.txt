@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://theo-zbn.github.io/Dedal-des-Couleurs/sitemap.xml
+Sitemap: https://theo-zbn.github.io/Dedal-des-Couleurs-/sitemap.xml

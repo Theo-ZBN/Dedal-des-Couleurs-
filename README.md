@@ -2,7 +2,7 @@
 
 Site vitrine statique HTML, CSS et JavaScript de la galerie Dedal des Couleurs.
 
-**Adresse prévue :** https://theo-zbn.github.io/Dedal-des-Couleurs/
+**Adresse prévue :** https://theo-zbn.github.io/Dedal-des-Couleurs-/
 
 ## Contenu
 - `index.html` : accueil
@@ -14,18 +14,18 @@ Site vitrine statique HTML, CSS et JavaScript de la galerie Dedal des Couleurs.
 - `robots.txt`, `sitemap.xml` : référencement
 
 ## Publier sur GitHub Pages
-1. Sur GitHub, créer un dépôt **public** nommé `Dedal-des-Couleurs` sous le compte `Theo-ZBN`, **sans** ajouter de README ou de licence.
+1. Sur GitHub, créer un dépôt **public** nommé `Dedal-des-Couleurs-` sous le compte `Theo-ZBN`, **sans** ajouter de README ou de licence.
 2. Depuis le dossier de ce projet (qui contient déjà un historique Git), exécuter :
 
    ```bash
-   git remote add origin https://github.com/Theo-ZBN/Dedal-des-Couleurs.git
+   git remote add origin https://github.com/Theo-ZBN/Dedal-des-Couleurs-.git
    git push -u origin main
    ```
 
 3. Sur GitHub, aller dans **Settings → Pages → Build and deployment**, sélectionner **Deploy from a branch**, branche **main**, dossier **/(root)**, puis enregistrer.
-4. Attendre la publication et visiter https://theo-zbn.github.io/Dedal-des-Couleurs/
+4. Attendre la publication et visiter https://theo-zbn.github.io/Dedal-des-Couleurs-/
 
-Si le dépôt distant existe déjà et que `origin` est configuré, utiliser `git remote set-url origin https://github.com/Theo-ZBN/Dedal-des-Couleurs.git`.
+Si le dépôt distant existe déjà et que `origin` est configuré, utiliser `git remote set-url origin https://github.com/Theo-ZBN/Dedal-des-Couleurs-.git`.
 
 ## À vérifier
 - Les illustrations d'œuvres et certaines informations sur la galerie sont des contenus d'exemple à remplacer par des contenus validés.
