@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription et contact – Dedal des Couleurs</title>
+  <meta name="description" content="Inscrivez-vous gratuitement pour suivre les expositions de la galerie Dedal des Couleurs, et retrouvez nos coordonnées et horaires à Paris.">
+  <link rel="canonical" href="https://theo-zbn.github.io/Dedal-des-Couleurs/inscription.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Dedal des Couleurs">
+  <meta property="og:title" content="Inscription et contact – Dedal des Couleurs">
+  <meta property="og:description" content="Inscrivez-vous gratuitement pour suivre les expositions de la galerie Dedal des Couleurs, et retrouvez nos coordonnées et horaires à Paris.">
+  <meta property="og:url" content="https://theo-zbn.github.io/Dedal-des-Couleurs/inscription.html">
+  <meta property="og:image" content="https://theo-zbn.github.io/Dedal-des-Couleurs/images/logo-dedal.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#faf5ec">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Fraunces:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo-dedal.svg" alt="" width="40" height="40">
+        <span>Dedal des Couleurs</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="oeuvres.html">Œuvres</a></li>
+          <li><a class="nav__link" href="a-propos.html">À propos</a></li>
+          <li><a class="nav__link" href="inscription.html" aria-current="page">Inscription</a></li>
+          <li><a class="nav__link nav__link--cta" href="inscription.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="container">
+      <section class="signup" aria-labelledby="titre-inscription">
+        <div class="signup__visual">
+          <img src="images/oeuvre-2.svg" alt="Toile aux tons turquoise et orange" width="600" height="750">
+        </div>
+        <div class="card">
+          <h1 id="titre-inscription">Restez informé</h1>
+          <p>Inscrivez-vous gratuitement pour recevoir les actualités et les prochaines expositions de la galerie.</p>
+          <form id="form-inscription" novalidate>
+            <div class="field">
+              <label for="prenom">Prénom</label>
+              <input id="prenom" name="prenom" type="text" autocomplete="given-name" required aria-describedby="err-prenom">
+              <p class="field__error" id="err-prenom" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input id="nom" name="nom" type="text" autocomplete="family-name" required aria-describedby="err-nom">
+              <p class="field__error" id="err-nom" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Adresse e-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+              <p class="field__error" id="err-email" aria-live="polite"></p>
+            </div>
+            <div class="field field--check">
+              <input id="consent" name="consent" type="checkbox">
+              <label for="consent">J'accepte de recevoir les actualités de la galerie.</label>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">S'inscrire</button>
+            <p class="form-success" id="succes" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="titre-contact">
+        <div>
+          <h2 id="titre-contact">Nous trouver</h2>
+          <img class="contact__map" src="images/plan.svg" alt="Plan schématique situant la galerie rue de la République, à Paris" width="640" height="340" loading="lazy">
+        </div>
+        <div>
+          <details class="details" open data-desktop-open>
+            <summary class="details__summary">Coordonnées</summary>
+            <div class="details__body">
+              <address>
+                <p>10 rue de la République, 75000 Paris</p>
+                <p>Tél : <a href="tel:+33163458556">01.63.45.85.56</a></p>
+                <p>Fax : 01.63.45.78.52</p>
+                <p>E-mail : <a href="mailto:dedal@gmail.com">dedal@gmail.com</a></p>
+                <p>Personne à contacter : Paul Dechewsky</p>
+              </address>
+            </div>
+          </details>
+          <details class="details" data-desktop-open>
+            <summary class="details__summary">Horaires</summary>
+            <div class="details__body">
+              <p>Mardi – Samedi : 10h00 – 19h00<br>Dimanche : 14h00 – 18h00<br>Lundi : fermé</p>
+            </div>
+          </details>
+          <details class="details" data-desktop-open>
+            <summary class="details__summary">Réseaux</summary>
+            <div class="details__body">
+              <p>Instagram, Facebook et X : @dedaldescouleurs</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo-dedal-clair.svg" alt="" width="40" height="40">
+        <span>Dedal des Couleurs</span>
+      </a>
+      <nav aria-label="Navigation de pied de page">
+        <ul class="site-footer__links">
+          <li><a href="oeuvres.html">Œuvres</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="inscription.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© 2026 Dedal des Couleurs – 10 rue de la République, 75000 Paris</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
